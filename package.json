@@ -1,0 +1,20 @@
+{
+  "name": "www.sunchaselv.com",
+  "version": "1.0.0",
+  "description": "Static website for www.sunchaselv.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo /dev/null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh+git://git@github.com/proprietary/www.sunchaselv.com"
+  },
+  "author": "Zelly Snyder <zelly@outlook.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "clean-css": "^4.2.3",
+    "gulp": "^4.0.2",
+    "postcss": "^7.0.27"
+  }
+}
