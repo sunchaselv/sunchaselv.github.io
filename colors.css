@@ -1,4 +1,5 @@
-body {
+:root {
+    /* Color palette--according to pre-existing art and current logo */
     --color-1: #f9ed69;
     --color-2: #f08a5d;
     --color-3: #b83b5e;
