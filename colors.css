@@ -1,7 +1,7 @@
 :root {
     /* Color palette--according to pre-existing art and current logo */
-    --color-1: #f9ed69;
-    --color-2: #f08a5d;
-    --color-3: #b83b5e;
-    --color-4: #6a2c70;
+    --color-1: 249, 237, 105;
+    --color-2: 240, 138, 93;
+    --color-3: 184, 59, 94;
+    --color-4: 106, 44, 112;
 }
