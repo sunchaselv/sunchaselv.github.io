@@ -16,5 +16,6 @@
     "clean-css": "^4.2.3",
     "gulp": "^4.0.2",
     "postcss": "^7.0.27"
-  }
+  },
+  "dependencies": {}
 }

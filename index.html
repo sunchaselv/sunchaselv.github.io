@@ -9,14 +9,22 @@
     content="Apartments in Las Vegas close to the Strip with washer dryer inside and tile floors. 1 and 2 bedroom apartments in Las Vegas under 1000.">
   <meta name="robots" content="index, follow">
   <link href="index.css" rel="stylesheet" type="text/css">
+  <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <!-- drone video  -->
-  <video src="assets/drone.m4v" autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" width="100%"
-    id="drone_video">
-    <!-- TODO fallback image -->
-  </video>
+  <div id="drone_video_box">
+    <div id="drone_video_overlay">
+      <header>
+        1 and 2 bedroom apartments in Las Vegas
+      </header>
+    </div>
+    <!-- drone video  -->
+    <video src="assets/drone.m4v" autoplay="autoplay" loop="loop" muted="muted" type="video/mp4" width="100%"
+      id="drone_video">
+      <!-- TODO fallback image -->
+    </video>
+  </div>
   <main id="root">
     <header id="logo">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -49,16 +57,31 @@
       </div>
     </section>
 
-    <section id="pricing">
+    <section id="pricing" class="content">
       <div class="floorplan">
         <header>
           <h3>Junior 1 bedroom</h3>
         </header>
-        <section>
-          <em>from $795</em>
+        <section class="floorplan_price">
+          from $795
         </section>
         <section>
           <img alt="Junior 1 bedroom 1 bath floorplan at Sun Chase Apartments" src="assets/floorplans/Jr.jpg" />
+        </section>
+        <section class="floorplan_description">
+          <ul>
+            <li><i class="fas fa-check"></i><span><strong>Washer and Dryer</strong> (stacked) inside</span></li>
+            <li><i class="fas fa-check"></i><span>Free water, sewer, trash</span></li>
+            <li><i class="fas fa-check"></i><span>Ceramic tile floors—no carpet</span></li>
+            <li><i class="fas fa-check"></i><span>Central A/C</span></li>
+            <li><i class="fas fa-check"></i><span>Patio with storage</span></li>
+            <li><i class="fas fa-times"></i><span>Washer and Dryer is stackable, not full size</span></li>
+          </ul>
+        </section>
+        <section class="virtual_tour">
+          <span class="button button_primary">
+            <a href="virtual_tours/Jr.html" title="Virtual tour of 1 bedroom 1 bath at Sun Chase Apartments">Virtual Tour</a>
+          </span>
         </section>
       </div>
       <div class="floorplan">
@@ -69,7 +92,18 @@
           <em>from $845</em>
         </section>
         <section>
-          <img alt="Junior 1 bedroom 1 bath floorplan at Sun Chase Apartments" src="assets/floorplans/1x1.jpg" />
+          <img alt="Large 1 bedroom 1 bath 710 sq. ft. floorplan at Sun Chase Apartments in Las Vegas" src="assets/floorplans/1x1.jpg" />
+        </section>
+        <section class="floorplan_description">
+          <ul>
+            <li><i class="fas fa-check"></i> <span><strong>Washer and Dryer</strong> (stacked) inside</span></li>
+            <li><i class="fas fa-check"></i> <span>Water, sewer, trash included</span></li>
+            <li><i class="fas fa-check"></i> <span>Ceramic tile floors—no carpet</span></li>
+            <li><i class="fas fa-check"></i> <span>Central A/C</span></li>
+            <li><i class="fas fa-check"></i> <span>Patio with storage</span></li>
+            <li><i class="fas fa-check"></i> <span>Washer and Dryer is full size, like a laundromat</span></li>
+            <li><i class="fas fa-times"></i> <span>Sliding door closet</span></li>
+          </ul>
         </section>
       </div>
       <div class="floorplan">
@@ -80,7 +114,18 @@
           <em>from $945</em>
         </section>
         <section>
-          <img alt="Junior 1 bedroom 1 bath floorplan at Sun Chase Apartments" src="assets/floorplans/2x1.jpg" />
+          <img alt="2 bedroom 1 bath 945 sq. ft. floorplan at Sun Chase Apartments in Las Vegas" src="assets/floorplans/2x1.jpg" />
+        </section>
+        <section class="floorplan_description">
+          <ul>
+            <li><i class="fas fa-check"></i><span><strong>Washer and Dryer</strong> (stacked) inside</span></li>
+            <li><i class="fas fa-check"></i><span>Water, sewer, trash included</span></li>
+            <li><i class="fas fa-check"></i><span>Ceramic tile floors—no carpet</span></li>
+            <li><i class="fas fa-check"></i><span>Central A/C</span></li>
+            <li><i class="fas fa-check"></i><span>Patio with storage</span></li>
+            <li><i class="fas fa-check"></i><span>Washer and Dryer is full size, like a laundromat</span></li>
+            <li><i class="fas fa-check"></i><span>One of the bedrooms has a walk-in closet</span></li>
+          </ul>
         </section>
       </div>
       <div class="floorplan">
@@ -91,24 +136,60 @@
           <em>from $995</em>
         </section>
         <section>
-          <img alt="Junior 1 bedroom 1 bath floorplan at Sun Chase Apartments" src="assets/floorplans/2x2.jpg" />
+          <img alt="2 bedroom 2 bath 920 sq. ft. floorplan at Sun Chase Apartments" src="assets/floorplans/2x2.jpg" />
         </section>
       </div>
     </section>
 
-    <section id="pitch">
+    <section id="pitch" class="content">
+
+      <section id="explore">
+        <header>
+          <h2>Virtual tours</h2>
+          <p class="subtitle">
+            Explore our apartments. The apartment you will move into is almost identical to these.
+          </p>
+        </header>
+        <div class="virtual_tour_carousel_item">
+          <!-- 1 bedroom 1 bath -->
+        </div>
+        <div class="virtual_tour_carousel_item">
+          <!-- 2 bedroom 1 bath -->
+        </div>
+        <div class="virtual_tour_carousel_item">
+          <!-- 2 bedroom w bath -->
+        </div>
+      </section>
+
+      <!-- Second call to action -->
+      <section id="cta_2">
+        <header>
+          <h2>Ask about availability</h2>
+        </header>
+        <div>
+          <a class="button button_big">
+            <i class="fas fa-sms"></i>
+            <span>Text Message (702) 530-APTS</span>
+          </a>
+        </div>
+      </section>
 
     </section>
 
     <footer>
       <div id="address">
-        📍<br/>3200 McLeod Drive, Las Vegas, NV 89121 (<a
+        <i class="fas fa-map-pin"></i>
+        <div>
+          3200 McLeod Drive, Las Vegas, NV 89121 (<a
           href="https://maps.apple.com/?daddr=3200+McLeod+Dr,+Las+Vegas,+Nevada">directions</a>)
+        </div>
       </div>
       <div id="contact">
         <h3>Contact</h3>
         <ul>
-          <li>Call: <a href="tel:+17025302787">(702) 530-APTS</a> or (702) 530-2787 or (702) 369-1112</li>
+          <li>
+            <i class="fas fa-"
+            Call: <a href="tel:+17025302787">(702) 530-APTS</a> or (702) 530-2787 or (702) 369-1112</li>
           <li>Text Message: <a href="sms:+17025302787">(702) 530-APTS</a></li>
           <li>Fax: (702) 369-6296</li>
           <li>Email: <a href="mailto:info@sunchaselv.com">info@sunchaselv.com</a></li>
