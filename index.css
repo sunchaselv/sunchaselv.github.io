@@ -15,7 +15,6 @@
 }
 
 body {
-	background-color: rgba(var(--color-2), 0.4);
 }
 
 #root {
@@ -26,21 +25,27 @@ body {
 	font-family: sans-serif;
 }
 
-header#logo {
-	display: grid;
+#logo {
+	display: flex;
+	flex-flow: column wrap;
 	margin: 1em 2em;
-	grid-template-columns: 1fr 3fr;
-	max-width: 100%;
 	min-height: var(--logo-height);
 }
 
-header#logo > svg {
+#logo > svg {
 	opacity: 0.8;
 	filter: drop-shadow(1px 1px 1px rgb(0,0,0));
+	flex-shrink: 1;
+	flex-grow: 0;
+	max-width: var(--logo-width);
 }
 
-header#logo > nav {
-	justify-self: end;
+#logo > nav {
+	display: block;
+	box-sizing: border-box;
+	flex-grow: 1;
+	max-width: 25vw;
+	align-self: end;
 }
 
 a {
@@ -49,17 +54,15 @@ a {
 }
 
 .button {
+	display: block;
+	box-sizing: border-box;
 	border: 1px solid rgba(0,0,0,0.5);
 	border-radius: .25rem;
 	padding: .375rem .754rem;
-	margin: 2rem .754rem;
 	font-size: 1rem;
 	line-height: 1.5;
-	vertical-align: middle;
-	text-align: center;
 	font-weight: 400;
 	filter: drop-shadow(3px 2px 5px rgb(0,0,0));
-	/* filter: drop-shadow(0.5em 0.5em 1em rgba(0,0,0,0.5)); */
 }
 
 .button_primary {
@@ -138,39 +141,42 @@ a {
 /* pricing table */
 
 #pricing {
-	display: flex;
-	flex-flow: row wrap;
-	background-color: rgba(var(--color-2), 0.2);
+	display: grid;
+	max-width: 100vw;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	overflow: auto;
+	overflow-inline: scroll;
+	justify-content: space-between;
 }
 
 #pricing > .floorplan {
-	border: 1px solid rgba(var(--color-2), 0.8);
-	border-radius: .375rem;
-	flex-shrink: 0;
-	flex-basis: 20vw;
-	flex-grow: 1;
+	background: rgb(255,255,255);
+	filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.5));
+	border: 1px solid transparent;
+	margin: 1rem;
+	padding: 1rem;
 	display: grid;
-	grid-template-rows: 1fr 1fr 2fr 3fr 1fr;
-}
-
-#pricing > .floorplan img {
-	width: auto;
-	height: 7rem;
+	grid-template-rows: 1fr 3rem 3rem 1fr 2rem;
 }
 
 #pricing > .floorplan > .floorplan_price {
 	padding: .5rem;
-	font-size: 1.5rem;
+	font-size: 2rem;
+}
+
+.floorplan_image picture {
+	max-width: 100%;
 }
 
 #pricing > .floorplan > header {
 	text-align: center;
 	padding: 1rem;
-	background: rgba(var(--color-2), 0.5);
+	/*background: rgba(var(--color-2), 0.2);*/
+	background-color: #f7f7f7;
 }
 
 #pricing > .floorplan > .floorplan_description {
-	padding: 0 .2rem;
+	padding: .5rem .2rem;
 }
 
 #pricing > .floorplan > .floorplan_description > ul {
@@ -185,6 +191,7 @@ a {
 
 #pitch {
 	display: grid;
+	padding-top: 10rem;
 	grid-row-gap: 5rem;
 }
 
@@ -194,12 +201,12 @@ a {
 
 /* striped */
 #pitch > section:nth-child(even) {
-	background-color: rgba(var(--color-2), 0.6);
+	background-color: rgba(var(--color-2), 0.1);
 }
 
 /* striped */
 #pitch > section:nth-child(odd) {
-	background-color: rgba(var(--color-4), 0.2);
+	background-color: rgba(white, 1);
 }
 
 
@@ -210,14 +217,9 @@ footer {
 	min-height: 50rem;
 	background-color: rgb(var(--color-4));
 	color: rgb(var(--color-2));
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 6fr 1fr;
+	display: flex;
+	flex-flow: column wrap;
 }
 
 footer > #copyright {
-	grid-row-start: 2;
-	grid-row-end: 3;
-	grid-column-start: 1;
-	grid-column-end: 3;
 }
