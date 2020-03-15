@@ -1,0 +1,140 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'IBMPlexSans-Regular',sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+/* header */
+
+#top_bar {
+	display: grid;
+	grid-template-columns: 1fr 8fr;
+	align-items: center;
+	min-height: var(--top-bar-height);
+	background-color: rgba(var(--color-4), 0.69);
+	backdrop-filter: blur(1px);
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+#logo_box a {
+	opacity: 1;
+	margin-left: 1rem;
+	box-shadow: 4px 4px 7px 1px rgba(0,0,0,0.5);
+	background: border-box no-repeat center url('assets/logo.svg') rgba(var(--color-4), 1);
+	display: block;
+	height: 10vh;
+	width: 20vw;
+}
+
+#top_bar > nav {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	justify-self: end;
+}
+
+#top_bar > nav > * {
+	margin: 1vw;
+}
+
+.button {
+	display: block;
+	box-sizing: border-box;
+	border-radius: .25rem;
+	filter: drop-shadow(1px 1px 1px black);
+	padding: .3vw .7vw;
+	font-size: 3vw;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+}
+
+.button_primary {
+	background-color: rgba(var(--color-3), 0.6);
+	font-weight: 600;
+}
+
+.button_secondary {
+	background-color: rgba(var(--color-3), 0.4);
+}
+
+.button a {
+	color: rgb(var(--color-1));
+}
+
+
+
+/* footer */
+
+footer {
+	padding: 20rem 2rem 0 2rem;
+	min-height: 50rem;
+	background-color: rgba(var(--color-4), 1);
+	color: rgb(var(--color-1));
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	justify-content: space-between;
+	line-height: 1.8rem;
+}
+
+footer > * {
+	flex-basis: auto;
+	white-space: nowrap;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+footer h4 {
+	text-transform: uppercase;
+	letter-spacing: .025em;
+	font-weight: 600;
+}
+
+footer #footer_logo {
+	margin: 0 0 3rem 0;
+	background: border-box no-repeat left url('assets/logo.svg');
+	display: block;
+	height: 6vh;
+	width: auto;
+	opacity: .9;
+}
+
+#footer_address > * {
+	margin-bottom: 20px;
+}
+
+footer > nav > * {
+	margin-bottom: 20px;
+}
+
+#social_media > * {
+	display: inline-block;
+	padding: 1rem;
+	color: rgba(var(--color-1),.8);
+}
+
+#copyright {
+	color: rgba(var(--color-3), .7);
+}
+
+.brand_name {
+	font-family: 'Kabel Black';
+	font-size: 1rem;
+}
+
