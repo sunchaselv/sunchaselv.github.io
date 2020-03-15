@@ -1,7 +1,7 @@
 @import "colors.css";
-@import "responsive.css";
 @import "fonts.css";
 @import "global.css";
+@import "responsive.css";
 
 :root {
 	--hero-height: calc(100vw/16 * 9);
