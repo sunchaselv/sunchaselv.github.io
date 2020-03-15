@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'Kabel Black';
+	src: url('assets/Kabel-Black.woff') format("woff");
+}
+
+@font-face {
+	font-family: 'IBMPlexSans-SemiBold';
+	src: url('assets/IBMPlexSans-SemiBold.woff2') format("woff2");
+}
+
+@font-face {
+	font-family: 'IBMPlexSans-Regular';
+	src: url('assets/IBMPlexSans-Regular.woff2') format('woff2');
+}
