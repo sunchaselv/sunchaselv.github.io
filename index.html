@@ -8,6 +8,7 @@
   <meta name="description"
 	content="Apartments in Las Vegas close to the Strip with washer dryer inside and tile floors. 1 and 2 bedroom apartments in Las Vegas under 1000.">
   <meta name="robots" content="index, follow">
+	<link rel="shortcut icon" href="assets/logo.svg">
   <link href="index.css" rel="stylesheet" type="text/css">
   <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
 </head>
@@ -100,6 +101,11 @@
 			<li><i class="fas fa-times"></i> <span>Sliding door closet</span></li>
 		  </ul>
 		</section>
+		<section>
+			<a class="button button_primary button_virtual_tour" aria-label="Virtual tour of 1 bedroom 1 bath apartment at Sun Chase Apartments in Las Vegas" href="apartments/virtual-tours/1-bedroom-1-bath/" target="_blank">
+				Virtual Tour
+			</a>
+		</section>
 	  </div>
 	  <div class="floorplan">
 		<section class="floorplan_image">
@@ -126,7 +132,9 @@
 		  </ul>
 		</section>
 		<section>
-
+			<a class="button button_primary button_virtual_tour" aria-label="Virtual tour of 2 bedroom 1 bath apartment at Sun Chase Apartments in Las Vegas" href="apartments/virtual-tours/2-bedroom-1-bath/" target="_blank">
+				Virtual Tour
+			</a>
 		</section>
 	  </div>
 	  <div class="floorplan">
@@ -158,6 +166,7 @@
 	</main>
 
 	<footer>
+
 	  <section id="footer_address">
 		<div id="footer_logo"></div>
 		<div>
@@ -202,6 +211,17 @@
 			Email <a href="mailto:info@sunchaselv.com">info@sunchaselv.com</a>
 		  </li>
 		</ul>
+		<div id="social_media">
+			<a aria-label="Sun Chase Apartments in Las Vegas on Instagram" href="https://www.instagram.com/sunchaselv/">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a aria-label="Sun Chase Apartments in Las Vegas on Facebook" href="https://www.facebook.com/sunchaselv/">
+				<i class="fab fa-facebook"></i>
+			</a>
+			<a aria-label="Sun Chase Apartments in Las Vegas on Twitter" href="https://twitter.com/sunchaselv/">
+				<i class="fab fa-twitter"></i>
+			</a>
+		</div>
 	  </div>
 	  <nav>
 		<section>
@@ -211,7 +231,7 @@
 			  <li><a href="articles/buying-vs-renting.html">Buying vs. Renting</a></li>
 			</ul>
 		</section>
-		<section>
+		<!--<section>
 		  <h4>Floorplans</h4>
 		  <ul>
 			<li><a href="apartments/Junior-1-bedroom-1-bath.html">Jr 1 bed 1 bath</a></li>
@@ -219,9 +239,99 @@
 			<li><a href="apartments/2-bedroom-1-bath.html">2 bed 1 bath</a></li>
 			<li><a href="apartments/2-bedroom-2-bath.html">2 bed 2 bath</a></li>
 		  </ul>
-		</section>
+		</section>-->
 	  </nav>
 	</footer>
+
+	<script type="application/ld+json">
+
+	{
+		"@context": "http://schema.org",
+		"@type": "LocalBusiness",
+		"image": [
+			"https://www.sunchaselv.com/assets/gallery/sun-chase-apartments-in-las-vegas-washer-dryer-granite-counters.jpg",
+			"https://www.sunchaselv.com/gallery/putting-greens-at-sun-chase-apartments-in-las-vegas.jpg",
+			"https://www.sunchaselv.com/gallery/020.JPG"
+		],
+		"@id": "https://www.sunchaselv.com/",
+		"name": "Sun Chase Apartments",
+		"logo": "https://www.sunchaselv.com/assets/logo.svg",
+		"slogan": "Cheap apartments in Las Vegas under 1000 near the Strip with washer dryer in unit",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "3200 McLeod Dr",
+			"addressLocality": "Las Vegas",
+			"addressRegion": "NV",
+			"postalCode": "89121",
+			"addressCountry": "US"
+		},
+		"currenciesAccepted": ["USD", "BTC"],
+		"paymentAccepted": ["Cash", "Credit Card", "Cryptocurrency"],
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 36.131083,
+			"longitude": -115.108107
+		},
+		"url": "https://www.sunchaselv.com/",
+		"telephone": "+1-702-369-1112",
+		"faxNumber": "+1-702-326-9496",
+		"email": "info@sunchaselv.com",
+		"priceRange": "$",
+		"smokingAllowed": true,
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"opens": "08:00",
+				"closes": "11:00"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+					"Saturday"
+				],
+				"opens": "12:30",
+				"closes": "17:00"
+			},
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Sunday"
+				],
+				"opens": "08:00",
+				"closes": "11:00"
+			}
+		]
+	}
+	</script>
+
+	<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Sun Chase Apartments in Las Vegas",
+		"url": "https://www.sunchaselv.com/",
+		"sameAs": [
+			"http://www.facebook.com/sunchaselv/",
+			"http://www.instagram.com/sunchaselv/",
+			"http://twitter.com/sunchaselv"
+		]
+	}
+	</script>
+
+
 </body>
 
 </html>
