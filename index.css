@@ -47,14 +47,14 @@
 }
 
 #drone_video_overlay > header {
-	background-color: rgba(var(--color-3), 0.4);
+	background-color: rgba(var(--color-2), 0.4);
 	padding: .2rem;
 	backdrop-filter: blur(2px);
 }
 
 #drone_video_overlay > header h1 {
 	font-family: 'IBMPlexSans-SemiBold',sans-serif;
-	color: rgba(var(--color-1), 1);
+	color: rgba(var(--color-3), 1);
 	font-weight: 600;
 	font-size: 3vw;
 	text-shadow: 0 2px 12px rgb(0,0,0);
@@ -82,7 +82,8 @@
 }
 
 #pricing > .floorplan {
-	background: rgb(255,255,255);
+	background: rgba(var(--color-4), 1);
+	color: rgba(var(--color-2), 1);
 	filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.5));
 	border: 1px solid transparent;
 	margin: 1rem;
@@ -100,11 +101,14 @@
 	max-width: 100%;
 }
 
+.floorplan_image {
+	background-color: white;
+}
+
 #pricing > .floorplan > header {
 	text-align: center;
 	padding: 1rem;
-	/*background: rgba(var(--color-2), 0.2);*/
-	background-color: #f7f7f7;
+	background: rgba(var(--color-2), 0.2);
 }
 
 #pricing > .floorplan > .floorplan_description {
@@ -113,6 +117,7 @@
 
 #pricing > .floorplan > .floorplan_description > ul {
 	list-style: none;
+	line-height: 1.6rem;
 }
 
 #pricing > .floorplan > .floorplan_description i.fas {

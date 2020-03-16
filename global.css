@@ -61,16 +61,16 @@ a {
 }
 
 .button_primary {
-	background-color: rgba(var(--color-3), 0.6);
+	background-color: rgba(var(--color-1), 0.6);
 	font-weight: 600;
 }
 
 .button_secondary {
-	background-color: rgba(var(--color-3), 0.4);
+	background-color: rgba(var(--color-4), 0.4);
 }
 
 .button a {
-	color: rgb(var(--color-1));
+	color: rgb(var(--color-3));
 }
 
 
