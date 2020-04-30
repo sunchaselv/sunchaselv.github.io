@@ -183,7 +183,7 @@
       "name": "How much is the security deposit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Security depsoit starts at $200 but could be more depending on credit."
+        "text": "Security deposit starts at $200 but could be more depending on credit."
       }
     },
     {
